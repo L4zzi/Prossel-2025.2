@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 60px;
+  }
+
+  .logo img {
+    height: 70px;
+    margin-bottom: 0;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu-list li a {
+    font-size: 18px;
+  }
+
+  .separator {
+    font-size: 24px;
+  }
+
+  .conteudoini {
+    flex-direction: row;
+    padding: 60px 40px;
+  }
+
+  .imagem-box {
+    flex: 1;
+  }
+
+  .texto-box {
+    flex: 1.5;
+  }
+
+  .caixa {
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .intro-text h1 {
+    font-size: 32px;
+  }
+
+  .produtos {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .produto {
+    width: 300px;
+  }
+
+  .footer-conteudo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-info {
+    text-align: left;
+  }
+
+  .footer-social {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    height: 500px;
+  }
+}

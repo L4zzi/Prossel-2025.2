@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Pollos Hermanos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="desktop.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="menu">
+      <div class="logo">
+        <img src="\img\polos.png" alt="Los Pollos Hermanos">
+      </div>
+      <ul class="menu-list">
+        <span class="separator">◆</span>
+        <li><a href="#historia">Nossa História</a></li>
+        <span class="separator">◆</span>
+        <li><a href="#equipe">Empregados</a></li>
+        <span class="separator">◆</span>
+        <li><a href="#cardapio">Cardápio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SEÇÃO HISTÓRIA -->
+    <section id="historia" class="conteudoini">
+      <div class="imagem-box">
+        <img src="img\restaurante.jpg" alt="Imagem do restaurante">
+      </div>
+      <div class="texto-box">
+        <h1>Bem-vindo ao Los Pollos Hermanos</h1>
+        <p>A Los Pollos Hermanos nasceu da visão de um homem determinado a oferecer mais do que apenas comida — ele
+          queria entregar qualidade, confiança e um sabor inesquecível. Cada receita é preparada com ingredientes
+          frescos e o máximo cuidado, garantindo que cada cliente saia satisfeito.</p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO EQUIPE -->
+    <section id="equipe" class="intro-section">
+      <div class="caixa">
+        <div class="intro-image">
+          <img src="img\gusfring.png" alt="Chef Principal">
+        </div>
+        <div class="intro-text">
+          <h1>Conheça a equipe por trás do sabor inconfundível</h1>
+          <p>Nossa equipe é apaixonada pelo que faz. Cada membro traz dedicação e expertise para criar experiências
+            gastronômicas memoráveis.</p>
+        </div>
+      </div>
+
+      <!-- Carrossel -->
+      <div class="slider">
+        <input type="radio" name="slide" id="radio1" checked>
+        <input type="radio" name="slide" id="radio2">
+        <input type="radio" name="slide" id="radio3">
+        <input type="radio" name="slide" id="radio4">
+        <input type="radio" name="slide" id="radio5">
+
+        <div class="slides">
+          <div class="slide"><img src="img\ChefeEoPovo.png" alt="chef e o povo"></div>
+          <div class="slide"><img src="img\JesseLeg.png" alt="Pinkman"></div>
+          <div class="slide"><img src="img\WalterLeg.png" alt="Heinsberg"></div>
+          <div class="slide"><img src="img\MikeLeg.png" alt="Mike "></div>
+          <div class="slide"><img src="img\SaulLeg.png" alt="Saul "></div>
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CARDÁPIO -->
+    <section id="cardapio" class="cardapio">
+      <h1>Nosso Cardápio</h1>
+      <div class="produtos">
+        <div class="produto" onclick="abrirModal('modal1')">
+          <img src="img\FrangoFrito.png" alt="Frango Frito">
+          <h2>Frango Frito Básico</h2>
+        </div>
+        <div class="produto" onclick="abrirModal('modal2')">
+          <img src="img\frangoPimenta.png" alt="Frango Apimentado">
+          <h2>Frango Apimentado</h2>
+        </div>
+        <div class="produto" onclick="abrirModal('modal3')">
+          <img src="img\baldeFrango.png" alt="Combo Balde">
+          <h2>Combo do Balde</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAIS -->
+  <div id="modal1" class="modal" onclick="fecharModal('modal1')">
+    <div class="modal-conteudo" onclick="event.stopPropagation()">
+      <span class="fechar" onclick="fecharModal('modal1')">×</span>
+      <h2>Frango Frito Básico</h2>
+      <p>Aquela crocância por fora e suculência por dentro. Preparado com nossa receita secreta de 11 especiarias.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal" onclick="fecharModal('modal2')">
+    <div class="modal-conteudo" onclick="event.stopPropagation()">
+      <span class="fechar" onclick="fecharModal('modal2')">×</span>
+      <h2>Frango Apimentado</h2>
+      <p>Só para os fortes! Tempero picante que vai fazer você suar de prazer.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal" onclick="fecharModal('modal3')">
+    <div class="modal-conteudo" onclick="event.stopPropagation()">
+      <span class="fechar" onclick="fecharModal('modal3')">×</span>
+      <h2>Combo Balde</h2>
+      <p>Frango + molho + batata frita. Perfeito para compartilhar com a família!</p>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="footer-conteudo">
+      <div class="footer-info">
+        <p><strong>Contato:</strong> (99) 99999-9999</p>
+        <p><strong>Email:</strong> contato@lospolloshermanos.com</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/lospolloshermanos" target="_blank">
+          <img src="img\instagram-removebg-preview.png" alt="Instagram" class="insta-icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-msg">
+      <p>Compartilhe sua experiência <strong>#amoLosPollosHermanos</strong></p>
+    </div>
+  </footer>
+  <script src="script.js"> </script>
+</body>
+
+</html>
